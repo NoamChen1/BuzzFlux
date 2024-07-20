@@ -1,4 +1,4 @@
-class User {
+export class User {
     constructor(username) {
         this.username = username;
     }
@@ -10,10 +10,10 @@ class User {
 
     logout() {
         localStorage.removeItem('currentUser');
-        window.location.href = 'login.html'; // Redirect to the login page
+        window.location.href = 'loginPage.html'; // Redirect to the login page
     }
 }
-class Post {
+export class Post {
     constructor(content, author) {
         this.content = content;
         this.author = author;
@@ -27,7 +27,7 @@ class Post {
         feed.prepend(postElement);
     }
 }
-class Feed {
+export class Feed {
     constructor() {
         this.posts = [];
     }

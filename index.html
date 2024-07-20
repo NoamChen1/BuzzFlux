@@ -1,14 +1,23 @@
-<!-- Assuming your existing index.html setup -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuzzFlux Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 <div id="newPost">
     <textarea id="postContent" placeholder="What's happening?"></textarea>
-    <button onclick="postMessage()">Post</button>
+    <button id="postButton">Post</button>
 </div>
 <div id="feed">
     <!-- Posts will be displayed here -->
 </div>
+<div>
+    <button id="logoutButton">Logout</button>
 </div>
-<button onclick="logout()">Logout</button>
 
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
+</html>
